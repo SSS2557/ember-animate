@@ -9,6 +9,10 @@
         }
     };
 
+    Ember.View = Ember.View.extend({
+        tagName: 'div'
+    });
+
     Ember.View.reopen({
 
         isAnimatingIn : false,
