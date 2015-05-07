@@ -27,7 +27,7 @@
 
             var self = this;
 
-            this.$el = this.$();
+            this.$el = (this.tagName !== '') ? this.$() : null;
 
             this._transitionTo = this._transitionTo || this.transitionTo;
 
